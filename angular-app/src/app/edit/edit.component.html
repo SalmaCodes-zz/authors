@@ -1,0 +1,13 @@
+<a [routerLink]="['dashboard']">Home</a>
+<div class="error">
+    {{errors}}
+</div>
+<p>Edit this author:</p>
+<form (submit)="onEditAuthorSubmit()">
+    <p>Name:</p>
+    <input type="text" name="name" [(ngModel)]="name" /> 
+    <div>
+        <button class="blue button" [routerLink]="['']">Cancel</button>
+        <input class="green button" type="submit" value="Submit" />
+    </div>
+</form>

@@ -1,0 +1,22 @@
+<a [routerLink]="['/']">Home</a>
+<a [routerLink]="['/write', id]">Add a quote</a>
+
+<div *ngIf="error" class="error">{{error}}</div>
+
+<p>We have quotes by:</p>
+<table>
+  <thead>
+    <td>Quote</td>
+    <td>Votes</td>
+    <td>Actions available</td>
+  </thead>
+  <tr *ngFor="let quote of author.quotes">
+    <td>"{{quote.content}}"</td>
+    <td>{{quote.votes}}</td>
+    <td>
+      <button class="green button" (click)="onVoteUpQuote(quote._id)">Vote Up</button>
+      <button class="yellow button" (click)="onVoteDownQuote(quote._id)">Vote Down</button>
+      <button class="red button" (click)="onDeleteQuote(quote._id)">Delete</button>
+    </td>
+  </tr>
+</table>

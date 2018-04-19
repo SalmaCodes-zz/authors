@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+#wrapper {
+    width: 720px;
+    margin: 20px auto;
+}
+.error {
+    color: red;
+}
+.button {
+    border: 1px solid black;
+    box-shadow: 1px 1px black;
+    padding: 3px 5px;
+    font-size: 0.9em;
+    margin-right: 10px;
+    color: white;
+}
+.button.red {
+    background-color: maroon;
+}
+.button.yellow {
+    background-color: darkgoldenrod;
+}
+.button.green {
+    background-color: green;
+}
+.button.blue {
+    background-color: darkcyan;
+}
+input[type="text"] {
+    border: 1px solid black;
+    font-size: 0.9em;
+    padding: 3px 5px;
+    margin-bottom: 5px;
+}
+a {
+    font-size: 1.2em;
+    margin: 10px 10px 10px 0;
+    display: inline-block;
+    color: darkblue;
+}
+table {
+    border-collapse: collapse;
+}
+thead, tr, td {
+    border: 1px solid black;
+    padding: 7px;
+}
+thead {
+    background-color: lightgoldenrodyellow;
+}
+
